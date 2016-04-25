@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  grade: 1
+  homeroom: MyString
+  house: MyString
+  absences: 9.99
+  attendance: 9.99
+  tardies: 9.99
+  track: false
+  servhrs: 9.99
+  cgpa: 9.99
+  ugpa: 9.99
+  wgpa: 9.99
+  crank: 1
+  csize: 1
+  credits: 9.99
+  detentions: 1
+  eligible: MyString
+  totalf: 1
+  totald: 1
+  totalc: 1
+  totalb: 1
+  totala: 1
+
+two:
+  name: MyString
+  grade: 1
+  homeroom: MyString
+  house: MyString
+  absences: 9.99
+  attendance: 9.99
+  tardies: 9.99
+  track: false
+  servhrs: 9.99
+  cgpa: 9.99
+  ugpa: 9.99
+  wgpa: 9.99
+  crank: 1
+  csize: 1
+  credits: 9.99
+  detentions: 1
+  eligible: MyString
+  totalf: 1
+  totald: 1
+  totalc: 1
+  totalb: 1
+  totala: 1

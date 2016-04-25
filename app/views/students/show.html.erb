@@ -1,0 +1,84 @@
+<div class="page-header">
+    <h1>Student #<%= @item.id %></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd><%= @item.name %></dd>
+            
+            <dt>Grade</dt>
+            <dd><%= @item.grade %></dd>
+            
+            <dt>Homeroom</dt>
+            <dd><%= @item.name %></dd>
+            
+            <dt>House</dt>
+            <dd><%= @item.house %></dd>
+            
+            <dt>Absences</dt>
+            <dd><%= @item.absences %></dd>
+            
+            <dt>Attendance</dt>
+            <dd><%= @item.attendance %></dd>
+            
+            <dt>Tardies</dt>
+            <dd><%= @item.tardies %></dd>
+            
+            <dt>Track</dt>
+            <dd><%= @item.track %></dd>
+            
+            <dt>Service Learning Hours</dt>
+            <dd><%= @item.servhrs %></dd>
+            
+            <dt>Current Unweighted GPA</dt>
+            <dd><%= @item.cgpa %></dd>
+            
+            <dt>Cummulative Unweighted GPA</dt>
+            <dd><%= @item.ugpa %></dd>
+            
+            <dt>Weighted GPA</dt>
+            <dd><%= @item.wgpa %></dd>
+            
+            <dt>Class Rank</dt>
+            <dd><%= @item.crank %></dd>
+            
+            <dt>Class Size</dt>
+            <dd><%= @item.csize %></dd>
+            
+            <dt>Credits</dt>
+            <dd><%= @item.credits %></dd>
+            
+            <dt>Detentions</dt>
+            <dd><%= @item.detentions %></dd>
+            
+            <dt>Eligible</dt>
+            <dd><%= @item.eligible %></dd>
+            
+            <dt>Total As</dt>
+            <dd><%= @item.totala %></dd>
+            
+            <dt>Total Bs</dt>
+            <dd><%= @item.totalb %></dd>
+            
+            <dt>Total Cs</dt>
+            <dd><%= @item.totalc %></dd>
+            
+            <dt>Total Ds</dt>
+            <dd><%= @item.totald %></dd>
+            
+            <dt>Total Fs</dt>
+            <dd><%= @item.totalf %></dd>
+            
+            <dt>Date Created</dt>
+            <dd><%= @item.created_at.strftime("%b %e, %l:%M %p") %></dd>
+            
+            <dt>Last Updated</dt>
+            <dd><%= @item.updated_at.strftime("%b %e, %l:%M %p") %></dd>
+            
+            <dt>Options</dt>
+            <dd></dd>
+        </dl>
+    </div>
+</div>

@@ -1,0 +1,150 @@
+<% if @item.errors.any? %>
+  <% @item.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="page-header">
+  <h1>Edit Student #<%= @item.id %></h1>
+</div>
+
+<%= form_tag(student_path(@item.id), :method => :patch)  do  %>
+   
+    <div class="block">
+        <label for="name"> Student Name:
+            <input type="text" id="name" name="name" placeholder="Name" value=<%= @item.name%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="grade"> Grade Level:
+            <input type="text" id="grade" name="grade" placeholder="Grade Level" value=<%= @item.grade%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="homeroom"> Homeroom:
+            <input type="text" id="homeroom" name="homeroom" placeholder="Homeroom" value=<%=@item.homeroom%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="house"> House:
+            <input type="text" id="house" name="house" placeholder="House" value=<%=@item.house%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="absences"> Absences:
+            <input type="number" id="absences" name="absences" placeholder="Absences" value=<%=@item.absences%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="attendance"> Attendance:
+            <input type="number" id="attendance" name="attendance" placeholder="Attendance" value=<%=@item.attendance%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="tardies"> Tardies:
+            <input type="number" id="tardies" name="tardies" placeholder="Tardies" value=<%=@item.tardies%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="track"> On Track?
+            <input type="radio" id="track" name="track" value=<%=@item.track%>> Yes
+            <input type="radio" id="track" name="track" value=<%=@item.track%>> No
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="servhrs"> Service Hours:
+            <input type="number" id="servhrs" name="servhrs" placeholder="Hours" value=<%=@item.servhrs%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="cgpa"> Current Unweighted GPA:
+            <input type="text" id="cgpa" name="cgpa" placeholder="Current GPA" value=<%=@item.cgpa%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="ugpa"> Cummulative Unweighted GPA:
+            <input type="text" id="ugpa" name="ugpa" placeholder="Unweighted GPA" value=<%=@item.ugpa%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="tardies"> Cummulative Weighted GPA:
+            <input type="number" id="wgpa" name="wgpa" placeholder="Weighted GPA" value=<%=@item.wgpa%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="crank"> Class Rank:
+            <input type="number" id="crank" name="crank" placeholder="Class Rank" value=<%=@item.crank%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="csize"> Class Size:
+            <input type="number" id="csize" name="csize" placeholder="Class Size" value=<%=@item.csize%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="detentions"> Detentions:
+            <input type="number" id="detentions" name="detentions" placeholder="Detentions" value=<%=@item.detentions%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="eligible"> Eligible:
+            <input type="text" id="eligible" name="eligible" placeholder="Eligible" value=<%=@item.eligible%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="totala"> Total As:
+            <input type="number" id="totala" name="totala" placeholder="Total As" value=<%=@item.totala%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="totalb"> Total Bs:
+            <input type="number" id="totalb" name="totalb" placeholder="Total Bs" value=<%=@item.totalb%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="totalc"> Total C:
+            <input type="number" id="totalc" name="totalc" placeholder="Total Cs" value=<%=@item.totalc%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="totald"> Total Ds:
+            <input type="number" id="totald" name="totald" placeholder="Total Ds" value=<%=@item.totald%>>
+        </label> <br> <br>
+    </div>
+    
+    <div class="block">
+        <label for="totalf"> Total Fs:
+            <input type="number" id="totalf" name="totalf" placeholder="Total Fs" value=<%=@item.totalf%>>
+        </label> <br> <br>
+    </div>
+    
+    
+    
+    <button type="button" class="btn btn-primary">
+      <a href="/students"> Back   </a>
+    </button>
+    <input type="submit"> <br>
+    
+<% end %>
