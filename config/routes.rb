@@ -5,6 +5,13 @@ Rails.application.routes.draw do
   
   get "/home",               {:controller => "students", :action => "home"}
   get "/homestudent",        {:controller => "students", :action => "homestudent"}
+  get "/eligible",           {:controller => "students", :action => "eligible"}
+  get "/attendance",         {:controller => "students", :action => "attendance"}
+  get "/teachers",           {:controller => "students", :action => "teachers"}
+  get "/grades",             {:controller => "students", :action => "grades"}
+  get "/slh",                {:controller => "students", :action => "slh"}
+  get "/events",             {:controller => "students", :action => "events"}
+  
   get "/students/new",       {:controller => "students", :action => "new", :as => "new_student"}
   post "/students",          {:controller => "students", :action => "create", :as => "students"}
   

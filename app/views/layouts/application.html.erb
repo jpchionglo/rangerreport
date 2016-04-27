@@ -7,9 +7,12 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu&effect=shadow-multiple' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -33,6 +36,13 @@
       <ul class="nav navbar-nav">
         <li><a href="/students">View</a></li>
         <li><a href="/students/new">Create Student</a></li>
+        <li><a href="/homestudent">Home</a></li>
+        <li><a href="/eligible">Eligibility</a></li>
+        <li><a href="/attendance">Attendance</a></li>
+        <li><a href="/teachers">Teachers</a></li>
+        <li><a href="/grades">Grades</a></li>
+        <li><a href="/slh">SLH</a></li>
+        <li><a href="/events">Events</a></li>
         <!-- 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -58,7 +68,8 @@
     </div>
   </div>
 </nav>
-  
+<!-- Sidebar -->
+
 
 <%= notice %>
 <%= alert %> 

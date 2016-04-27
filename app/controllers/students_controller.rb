@@ -110,4 +110,28 @@ class StudentsController < ApplicationController
     def homestudent
         render "homestudent"
     end
+    
+    def eligible
+        render "eligible"
+    end
+    
+    def attendance
+        render "attendance"
+    end
+    
+    def teachers
+        render "teachers"
+    end
+    
+    def grades
+        render "grades"
+    end
+    
+    def slh
+        render "slh"
+    end
+    
+    def events
+        render "events"
+    end
 end
