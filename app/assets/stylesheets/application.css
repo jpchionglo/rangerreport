@@ -42,7 +42,6 @@ footer {
 }
 
 body {
-        background-color:white;
         font-family: 'Ubuntu', sans-serif;
     }
     .circular {
@@ -57,9 +56,6 @@ body {
     .circular img {
     	opacity: 0;
     	filter: alpha(opacity=0);
-	}
-	.jumbotron {
-	    background-color:#6795FF;
 	}
 	.shadow {
        -moz-box-shadow:    inset 0 0 10px #000000;
@@ -154,9 +150,4 @@ body {
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
         color: #fff;
         transition: all 0.5s ease 0s;
-    }
-    .container {
-      width: auto;
-      max-width: 680px;
-      padding: 0 15px;
     }
